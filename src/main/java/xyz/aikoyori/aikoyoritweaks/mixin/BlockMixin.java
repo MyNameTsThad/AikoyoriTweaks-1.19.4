@@ -4,10 +4,10 @@ import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Material;
 import org.spongepowered.asm.mixin.Mixin;
-import xyz.aikoyori.aikoyoritweaks.accessor.BlockMixin$MaterialAccessor;
+import xyz.aikoyori.aikoyoritweaks.accessor.MaterialAccessor;
 
 @Mixin(Block.class)
-public abstract class BlockMixin extends AbstractBlock implements BlockMixin$MaterialAccessor {
+public abstract class BlockMixin extends AbstractBlock implements MaterialAccessor {
     AbstractBlock.Settings setting;
     public BlockMixin(Settings settings) {
         super(settings);
