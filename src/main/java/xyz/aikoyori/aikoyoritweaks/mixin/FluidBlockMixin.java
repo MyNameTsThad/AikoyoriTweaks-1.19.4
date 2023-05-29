@@ -23,7 +23,7 @@ public abstract class FluidBlockMixin extends Block implements FluidDrainable {
 
 
     @Inject(method = "receiveNeighborFluids",at = @At(value = "INVOKE",target = "Lnet/minecraft/world/World;setBlockState(Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/BlockState;)Z",ordinal = 0),locals = LocalCapture.CAPTURE_FAILSOFT,cancellable = true)
-    void moreStoneTypeGeneratorsLol(World world, BlockPos pos, BlockState state, CallbackInfoReturnable<Boolean> cir, boolean bl, UnmodifiableIterator var5, Direction direction, BlockPos blockPos, Block block){
+    void moreStoneTypeGeneratorsLol(World world, BlockPos pos, BlockState state, CallbackInfoReturnable<Boolean> cir, Block block){
         if(world.getGameRules().getBoolean(AikoyoriTweaks.STONE_GENERATOR_VARIATION))
         {
 
