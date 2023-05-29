@@ -21,7 +21,7 @@
     "AikoyoriTweaks.mixins.json"
   ],
   "depends": {
-    "minecraft": "1.19.2"
+    "minecraft": "1.19.4"
   },
 
   "accessWidener" : "aikoyoritweaks.accesswidener"
